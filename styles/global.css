@@ -54,4 +54,10 @@
 }
 body{
     font-size: 1.6rem;
+    background-color: var(--shape-background);
+    overflow: hidden;
+}
+
+#app, #aside, #main{
+    border-radius: 1.6rem;
 }
