@@ -10,8 +10,10 @@
 }
 
 #main{
+    overflow: auto;
     background-color: var(--shape-body);
     max-width: 82rem;
+    padding: 8rem 13rem;
     
     .main-container{
         min-width: 56rem;

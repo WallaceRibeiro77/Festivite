@@ -1,0 +1,105 @@
+.main-container{
+    h2{
+        font: 700 2.8rem/normal var(--font-baloo2);
+        color: var(--text-heading);
+        margin-bottom: 4rem;
+    }
+    .details-event{
+
+        border: none;
+
+        .form-heading{
+            display: flex;
+            align-items: center;
+            gap: 1.2rem;
+            margin-bottom: 2.4rem;
+    
+            .calendar-icon{
+                fill: var(--input-placeholder);
+            }
+            p{
+                font: 700 1.8rem/2rem var(--font-baloo2);
+                color: var(--text-heading);
+            }
+        }
+
+        .multiple-inputs{
+            display: grid;
+            gap: 1.6rem;
+            grid-template-areas:
+            "titulo titulo"
+            "inicio fim"
+            "tipo local"
+            "textarea textarea";
+
+            .titulo{
+                grid-area: titulo;
+            }
+            .inicio{
+                grid-area: inicio;
+            }
+            .fim{
+                grid-area: fim;
+            }
+            .tipo{
+                grid-area: tipo;
+            }
+            .local{
+                grid-area: local;
+            }
+            .text-area{
+                grid-area: textarea;
+            }
+
+            .input-wrapper{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                gap: 1.2rem;
+                width: 100%;
+                
+                label{
+                    color: var(--text-body);
+                    font: 400 1.4rem/normal var(--font-open);
+                }
+
+                input{
+                    padding: 1.6rem;
+                    border-radius: .8rem;
+                    border: 1px solid var(--input-stroke);
+                    background-color: var(--input-base);
+                    
+                    &::placeholder{
+                        font: 400 1.6rem/normal var(--font-open);
+                        color: var(--input-placeholder);
+                    }
+                }
+
+            }
+        }
+        .text-area{
+            display: flex;
+            flex-direction: column;
+            gap: 1.2rem;
+
+            label{
+                color: white;
+                font: 400 1.4rem/normal var(--font-open);
+            }
+
+            textarea{
+                padding: 1.6rem;
+                border: 1px solid var(--input-stroke);
+                border-radius: .8rem;
+                background-color: var(--input-base);
+                resize: none;
+                
+                &::placeholder{
+                    font: 400 1.6rem/normal var(--font-open);
+                    color: var(--input-placeholder);
+                }
+            }
+
+        }
+    }
+}
