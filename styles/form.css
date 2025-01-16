@@ -43,6 +43,10 @@
 
     .personalized{
 
+        display: flex;
+        flex-direction: column;
+        gap: 2.8rem;
+
         .main-color{
             display: flex;
             flex-direction: column;
@@ -60,6 +64,8 @@
                 }
 
             }
+
+            
         }
     }
 }

@@ -80,4 +80,9 @@ form{
         color: var(--text-body);
         font: 400 1.4rem/normal var(--font-open);
     }
+
+    .subtext{
+        color: var(--text-body);
+        font: 400 1.4rem/normal var(--font-open);
+    }
 }
