@@ -1,31 +1,14 @@
 @import url(fields/index.css);
 
 .main-container{
-    display: flex;
-    flex-direction: column;
-    gap: 4.8rem;
     
     h2{
         font: 700 2.8rem/normal var(--font-baloo2);
         color: var(--text-heading);
-        margin-bottom: 4rem;
+        margin: 8rem 0 4rem;
     }
+    /*primeira parte do form*/
     .details-event{
-
-        .form-heading{
-            display: flex;
-            align-items: center;
-            gap: 1.2rem;
-            margin-bottom: 2.4rem;
-    
-            .calendar-icon{
-                fill: var(--input-placeholder);
-            }
-            p{
-                font: 700 1.8rem/2rem var(--font-baloo2);
-                color: var(--text-heading);
-            }
-        }
 
         .multiple-inputs{
             display: grid;
@@ -53,6 +36,29 @@
             }
             .text-area{
                 grid-area: textarea;
+            }
+        }
+    }
+    /*segunda parte*/
+
+    .personalized{
+
+        .main-color{
+            display: flex;
+            flex-direction: column;
+            gap: 1.6rem;
+
+            .colors-wrapper{
+                display: flex;
+                gap: 1.2rem;
+
+                .color:hover{
+                    cursor: pointer;
+                    svg rect:first-child{
+                        fill: var(--brand-light);
+                    }
+                }
+
             }
         }
     }

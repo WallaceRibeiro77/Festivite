@@ -9,19 +9,6 @@
     --font-leckerli: "Leckerli One";
     --font-baloo2: "Baloo 2";
     --font-open: "Open Sans", sans-serif;
-
-    /* --text-leckerli: 400 4rem/auto var(--font-leckerli);
-    
-    --text-md-baloo: 700 2.8rem/auto var(--font-baloo2);
-    --text-sm-baloo: 700 1.8rem/auto var(--font-baloo2);
-    
-    --text-md-open-regular: 400 1.6rem/auto var(--font-open);
-    --text-sm-open-regular: 400 1.4rem/auto var(--font-open);
-    --text-xs-open-regular: 400 1.2rem/auto var(--font-open);
-
-    --text-md-open-semibold: 600 1.6rem/auto var(--font-open);
-    --text-sm-open-semibold: 600 1.4rem/auto var(--font-open);
-    --text-xs-open-semibold: 600 1.2rem/auto var(--font-open); */
     /**fonts**/
 
     --brand-light: #59B2FF;
@@ -57,6 +44,11 @@ body{
     background-color: var(--shape-background);
     overflow: hidden;
 }
+.selected{
+    svg rect:first-child{
+        fill: var(--brand-light);
+    }
+}
 
 #app, #aside, #main{
     border-radius: 1.6rem;
@@ -64,4 +56,28 @@ body{
 
 fieldset{
     border: none;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 4.8rem;
+
+    .form-heading{
+        display: flex;
+        align-items: center;
+        gap: 1.2rem;
+        margin-bottom: 2.4rem;
+
+        svg{
+            fill: var(--input-placeholder);
+        }
+        p{
+            font: 700 1.8rem/2rem var(--font-baloo2);
+            color: var(--text-heading);
+        }
+    }
+    label{
+        color: var(--text-body);
+        font: 400 1.4rem/normal var(--font-open);
+    }
 }

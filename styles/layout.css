@@ -13,7 +13,7 @@
     overflow: auto;
     background-color: var(--shape-body);
     max-width: 82rem;
-    padding: 8rem 13rem;
+    padding: 4rem 13rem 0;
     
     .main-container{
         min-width: 56rem;
