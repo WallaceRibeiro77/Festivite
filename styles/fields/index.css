@@ -87,3 +87,27 @@ textarea:focus{
     }
 
 }
+
+.style-upload-section{
+    display: flex;
+    gap: 1.6rem;
+
+    .style{
+        display: flex;
+        flex-direction: column;
+        gap: 1.2rem;
+        
+        .switch-button{
+            display: flex;
+            align-items: center;
+            gap: 1.2rem;
+
+            svg{
+                cursor: pointer;
+                &:hover{
+                    stroke:var(--brand-light);
+                }
+            }
+        }
+    }
+}
