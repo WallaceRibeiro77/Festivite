@@ -90,7 +90,7 @@ textarea:focus{
 
 .style-upload-section{
     display: flex;
-    gap: 1.6rem;
+    gap:5rem;
 
     .style{
         display: flex;
@@ -109,5 +109,40 @@ textarea:focus{
                 }
             }
         }
+    }
+}
+.upload{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+
+    .upload-button{
+        display: flex;
+        gap: 1.2rem;
+        align-items: center;
+        
+        height: 4rem;
+        padding: .4rem 1.2rem;
+        border-radius: .8rem;
+        background-color: var(--shape-button);
+
+        &:hover{
+            cursor: pointer;
+            border: .125rem solid var(--brand-light);
+            svg{
+                fill: var(--brand-light);
+            }
+        }
+        svg{
+            fill:var(--text-heading);
+        }
+        input{
+            display: none;
+        }
+        label{
+            cursor: pointer;
+        }
+
     }
 }

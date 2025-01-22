@@ -22,10 +22,10 @@
             .titulo{
                 grid-area: titulo;
             }
-            .inicio{
+            .inicio,.email{
                 grid-area: inicio;
             }
-            .fim{
+            .fim,.tel{
                 grid-area: fim;
             }
             .tipo{
