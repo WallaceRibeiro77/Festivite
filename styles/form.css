@@ -22,10 +22,10 @@
             .titulo{
                 grid-area: titulo;
             }
-            .inicio,.email{
+            .inicio{
                 grid-area: inicio;
             }
-            .fim,.tel{
+            .fim{
                 grid-area: fim;
             }
             .tipo{
@@ -84,16 +84,93 @@
                     align-items: center;
                     justify-content: center;
                     gap: .8rem;
+                    border: .125rem solid var(--shape-button);
                     
                     img{
                         border-radius: .8rem;
                     }
                     &:hover{
                         cursor: pointer;
-                        border: 0.2rem solid var(--brand-light);
+                        border-color: var(--brand-light);
                     }
                 }
 
+            }
+        }
+    }
+    .info-contact{
+        .input-contact-wrapper{
+            .input-wrapper{
+                input[type="text"]{
+                    border: .125rem solid var(--feedback-danger);
+                    outline: 0;
+                    &:hover{
+                        border-color: var(--brand-light);
+                    }
+                }
+
+                .error-message{
+                    display: flex;
+                    gap: .8rem;
+                    margin-bottom: 1.6rem;
+    
+                    span{
+                        font: 400 1.2rem/normal var(--font-open);
+                        color: var(--feedback-danger);
+                    }
+                }
+            }
+            .multiple-contact-input{
+                display: flex;
+                gap: 1.6rem;
+                
+                input:hover{
+                    border-color: var(--brand-light);
+                }
+            }
+        }
+    }
+    .terms{
+        border-top: .125rem solid var(--input-stroke);
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+
+        .input-checkbox-wrapper{
+            width: 100%;
+            padding-top: 4rem;
+            display: flex;
+            flex-direction: column;
+            gap: .4rem;
+            justify-content: center;
+            margin-bottom: 4.8rem;
+            
+            div{
+                display: flex;
+                gap: 1.5rem;
+                
+                strong{
+                    color: var(--brand-light);
+                    cursor: pointer;
+                    &:hover{
+                        filter: brightness(50);
+                    }
+                }
+            }
+        }
+        button{
+            display: flex;
+            gap: 1.2rem;
+            height: 4rem;
+            align-items: center;
+            background-color: var(--brand-dark);
+            border-radius: .8rem;
+            padding: .4rem 2rem;
+            margin-bottom: 8rem;
+            
+            &:hover{
+                background-color: var(--brand-light);
+                cursor: pointer;
             }
         }
     }
